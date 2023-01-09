@@ -12,3 +12,7 @@ variable "furniture" {
 variable "furniture_DS_location" {
   
 }
+
+variable "furniture_id"{
+    
+}
