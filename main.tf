@@ -1,13 +1,30 @@
-#Google cloud provider
+terraform {
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "~> 3.58.0"
+    }
+    google-beta = {
+      source  = "hashicorp/google-beta"
+      version = "~> 3.90.0"
+    }
+  }
+  backend "gcs" {
+    bucket = "terraform-depal6"
+    prefix = "state"
+  }
+}
 
 provider "google" {
-  #source  = "hashicorp/google"  
-  #version =  "4.47.0"
-  #credentials = file("/home/deepu_palabhavi/terraform-access.json")
   project = var.project_id
-  region = var.region
-  zone = var.zone
+  region  = var.region
 }
+
+provider "google-beta" {
+  project = var.project_id
+  region  = var.region
+}
+
 
 # modules
 module "dataset" {
