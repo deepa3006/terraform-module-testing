@@ -1,5 +1,5 @@
-variable "tbl_notebook" {}
+variable "tbl_chair" {}
 
-variable "tbl_pen" {}
+variable "tbl_sofa" {}
 
 variable "furniture" {}

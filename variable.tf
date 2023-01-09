@@ -1,8 +1,8 @@
-variable "tbl_notebook" {
+variable "tbl_sofa" {
   
 }
 
-variable "tbl_pen" {
+variable "tbl_chair" {
   
 }
 

@@ -18,10 +18,10 @@ module "dataset" {
 
 }
 
-#module "table" {
-  #depends_on = [google_bigquery_dataset.stationary] 
-  #source = "./table"
-  #stationary_id = module.dataset.stationary_dataset_id
-  #tbl_notebook = var.tbl_notebook
-  #tbl_pen = var.tbl_pen
-#}
+module "table" {
+  depends_on = [module.dataset] 
+  source = "./table"
+  furniture_id = module.dataset.furniture_dataset_id
+  tbl_notebook = var.tbl_chair
+  tbl_pen = var.tbl_sofa
+}
