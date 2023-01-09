@@ -1,11 +1,12 @@
 #Google cloud provider
 
 provider "google" {
-#version =  "4.47.0"
-#credentials = file("/home/deepu_palabhavi/terraform-access.json")
-project = var.project_id
-region = var.region
-zone = var.zone
+  source  = "hashicorp/google"  
+  version =  "4.47.0"
+  #credentials = file("/home/deepu_palabhavi/terraform-access.json")
+  project = var.project_id
+  region = var.region
+  zone = var.zone
 }
 
 # modules
