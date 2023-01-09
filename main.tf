@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "terraform-wif-example"
+    bucket = "terraform-module-2023"
     prefix = "dev"
   }
 }
