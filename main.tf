@@ -1,14 +1,4 @@
 terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "~> 3.58.0"
-    }
-    google-beta = {
-      source  = "hashicorp/google-beta"
-      version = "~> 3.90.0"
-    }
-  }
   backend "gcs" {
     bucket = "terraform-depal6"
     prefix = "state"
@@ -16,15 +6,9 @@ terraform {
 }
 
 provider "google" {
-  project = var.project_id
-  region  = var.region
+  project = "utility-cumulus-372111"
+  region  = "us-central1"
 }
-
-provider "google-beta" {
-  project = var.project_id
-  region  = var.region
-}
-
 
 # modules
 module "dataset" {

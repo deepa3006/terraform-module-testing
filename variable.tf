@@ -12,15 +12,3 @@ variable "furniture" {
 variable "furniture_DS_location" {
   
 }
-
-variable "project_id" {
-  
-}
-
-variable "region" {
-  
-}
-
-variable "zone" {
-  
-}
