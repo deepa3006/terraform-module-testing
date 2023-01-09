@@ -7,7 +7,7 @@ resource "google_bigquery_table" "tbl_notebook" {
   time_partitioning {
     type = "DAY"
   }
-   schema = file()
+   #schema = file()
 }
 
 # pen table
@@ -19,5 +19,5 @@ resource "google_bigquery_table" "tbl_pen" {
   time_partitioning {
     type = "DAY"
   }
-   schema = file()
+   #schema = file()
 }
