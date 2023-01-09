@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
-    bucket = "terraform-depal6"
-    prefix = "state"
+    bucket = "terraform-wif-example"
+    prefix = "dev"
   }
 }
 
