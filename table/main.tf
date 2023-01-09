@@ -1,8 +1,8 @@
 # notebook table
-resource "google_bigquery_table" "tbl_notebook" {
+resource "google_bigquery_table" "tbl_sofa" {
   #depends_on = [ var.furniture ]  
   dataset_id = var.furniture
-  table_id = var.tbl_notebook
+  table_id = var.tbl_sofa
 
   time_partitioning {
     type = "DAY"
@@ -11,10 +11,10 @@ resource "google_bigquery_table" "tbl_notebook" {
 }
 
 # pen table
-resource "google_bigquery_table" "tbl_pen" {
+resource "google_bigquery_table" "tbl_chair" {
   #depends_on = [ var.furniture ] 
   dataset_id = var.furniture
-  table_id = var.tbl_pen
+  table_id = var.tbl_chair
 
   time_partitioning {
     type = "DAY"
