@@ -1,8 +1,8 @@
 #Google cloud provider
 
 provider "google" {
-  source  = "hashicorp/google"  
-  version =  "4.47.0"
+  #source  = "hashicorp/google"  
+  #version =  "4.47.0"
   #credentials = file("/home/deepu_palabhavi/terraform-access.json")
   project = var.project_id
   region = var.region
