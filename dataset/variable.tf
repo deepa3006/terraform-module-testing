@@ -1,5 +1,5 @@
-variable "stationary" {
+variable "furniture" {
 }
 
-variable "stationary_DS_location" {
+variable "furniture_DS_location" {
 }
