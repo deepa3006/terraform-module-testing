@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "terraform-module-testing"
+    bucket = "terraform-depal6"
     prefix = "dev"
   }
 }
