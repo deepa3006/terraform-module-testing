@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "terraform-depal6"
+    bucket = "terrafrom-depal6"
     prefix = "dev"
   }
 }
