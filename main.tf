@@ -23,7 +23,7 @@ module "dataset" {
 module "table" {
   depends_on = [module.dataset] 
   source = "./table"
-  furniture = module.dataset.furniture_dataset_id
+  #furniture = module.dataset.furniture_dataset_id
   tbl_chair = var.tbl_chair
   #tbl_chair = "tbl_chair"
   tbl_sofa = var.tbl_sofa
