@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "terraform-module-2023"
+    bucket = "terraform-module-testing"
     prefix = "dev"
   }
 }
